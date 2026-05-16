@@ -7,19 +7,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const body = document.body;
     
     function openMenu() {
-        mobileSideNav.classList.add('open');
-        overlay.classList.add('active');
-        body.classList.add('menu-open');
-        menuToggle.setAttribute('aria-expanded', 'true');
-        mobileSideNav.setAttribute('aria-hidden', 'false');
+        if (mobileSideNav) {
+            mobileSideNav.classList.add('open');
+            if (overlay) overlay.classList.add('active');
+            body.classList.add('menu-open');
+            if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+            if (mobileSideNav) mobileSideNav.setAttribute('aria-hidden', 'false');
+        }
     }
     
     function closeMenu() {
-        mobileSideNav.classList.remove('open');
-        overlay.classList.remove('active');
-        body.classList.remove('menu-open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        mobileSideNav.setAttribute('aria-hidden', 'true');
+        if (mobileSideNav) {
+            mobileSideNav.classList.remove('open');
+            if (overlay) overlay.classList.remove('active');
+            body.classList.remove('menu-open');
+            if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+            if (mobileSideNav) mobileSideNav.setAttribute('aria-hidden', 'true');
+        }
     }
     
     if (menuToggle) menuToggle.addEventListener('click', openMenu);
@@ -28,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Close on Escape key
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileSideNav.classList.contains('open')) {
+        if (e.key === 'Escape' && mobileSideNav && mobileSideNav.classList.contains('open')) {
             closeMenu();
         }
     });
@@ -90,9 +94,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         
         if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) closeLightbox();
-        });
+        if (lightbox) {
+            lightbox.addEventListener('click', function(e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+        }
         
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && lightbox.classList.contains('active')) {
@@ -122,16 +128,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             
-            // Show success message (in a real site, this would send to server)
+            // Show success message
             alert('Thank you! Your reservation request has been sent. We will contact you shortly.\n\nNote: This is a demo. In production, this would send to your email.');
             contactForm.reset();
         });
     }
     
     // Current year in footer copyright
-    const yearSpan = document.querySelector('.footer-bottom p');
-    if (yearSpan) {
+    const footerBottom = document.querySelector('.footer-bottom p');
+    if (footerBottom) {
         const currentYear = new Date().getFullYear();
-        yearSpan.innerHTML = yearSpan.innerHTML.replace('2026', currentYear);
+        footerBottom.innerHTML = footerBottom.innerHTML.replace(/202[0-9]/, currentYear);
     }
 });

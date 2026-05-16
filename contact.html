@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Reserve | Nate Café & Restaurant</title>
+  <meta name="description" content="Contact Nate Café & Restaurant to reserve a table, ask a question, or plan your event. Located in Addis Ababa, Ethiopia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @media print {
+      .nav-bar, .topbar, .footer, .whatsapp-float, .whatsapp-tooltip,
+      .mobile-side-nav, .side-nav-overlay, .skip-link,
+      .contact-section, .hours-section, .map-section, .cta-section, .page-header { display: none !important; }
+      body { background: white !important; color: #000 !important; }
+      .business-card-section { padding: 30px !important; }
+      .business-card { box-shadow: none !important; break-inside: avoid; }
+      .business-card, .card-back { background: #f5fff8 !important; border: 2px solid #2D8A4E !important; }
+      .bc-name { color: #1B6B34 !important; -webkit-text-fill-color: #1B6B34 !important; }
+      .bc-tagline, .bc-motto { color: #2D8A4E !important; -webkit-text-fill-color: #2D8A4E !important; }
+      .bc-details p { color: #333 !important; }
+      .print-btn-wrap { display: none !important; }
+      .bc-section-title { color: #1B6B34 !important; -webkit-text-fill-color: #1B6B34 !important; }
+    }
+    .bc-section-title {
+      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+      background-size: 200% auto; -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<aside class="topbar" aria-label="Restaurant info">
+  <div><i class="fas fa-clock" aria-hidden="true"></i> Open Daily: <span>7:00 AM – 11:00 PM</span></div>
+  <div><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Addis Ababa, Ethiopia</span></div>
+  <div><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></div>
+</aside>
+<header class="nav-bar">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="logo" aria-label="Nate Café – Home">
+      <img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="Nate Café logo" class="logo-img">
+      <div class="logo-text" aria-hidden="true">NATE<span>CAFÉ &amp; RESTAURANT</span></div>
+    </a>
+    <button class="mobile-menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileSideNav"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="why-us.html">Why Us</a></li><li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta-btn">Reserve a Table</a></li>
+    </ul>
+  </nav>
+</header>
+<nav class="mobile-side-nav" id="mobileSideNav" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="mobile-side-header">
+    <div class="mobile-logo"><img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="" class="mobile-logo-img"><span>Nate Café</span></div>
+    <button class="close-side-nav" id="closeSideNav" aria-label="Close menu"><i class="fas fa-times" aria-hidden="true"></i></button>
+  </div>
+  <ul class="mobile-nav-links" role="list">
+    <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+    <li><a href="about.html"><span aria-hidden="true">📖</span> About</a></li>
+    <li><a href="why-us.html"><span aria-hidden="true">⭐</span> Why Us</a></li>
+    <li><a href="gallery.html"><span aria-hidden="true">🖼️</span> Gallery</a></li>
+    <li><a href="events.html"><span aria-hidden="true">🎉</span> Events</a></li>
+    <li><a href="testimonials.html"><span aria-hidden="true">💬</span> Reviews</a></li>
+    <li><a href="contact.html" class="active"><span aria-hidden="true">📞</span> Contact</a></li>
+    <li><a href="contact.html" class="mobile-cta-btn"><span aria-hidden="true">🍽️</span> Reserve a Table</a></li>
+  </ul>
+  <div class="mobile-side-footer">
+    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></p>
+    <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    <p><i class="fab fa-telegram" aria-hidden="true"></i> <a href="https://t.me/251911116130" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+  </div>
+</nav>
+<div class="side-nav-overlay" id="sideNavOverlay" aria-hidden="true"></div>
+
+<main id="main-content">
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>Contact &amp; Reserve</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Contact</p>
+    </div>
+  </div>
+
+  <!-- CONTACT FORM + INFO -->
+  <div class="container contact-section">
+    <section class="section" aria-labelledby="contact-heading">
+      <div class="section-header reveal">
+        <div class="section-label" aria-hidden="true">Get in Touch</div>
+        <h2 class="section-title" id="contact-heading">Reserve a <span>Table</span></h2>
+        <div class="section-line" role="presentation"></div>
+        <p class="section-desc">Book your table, send us a message, or plan your next event with us.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <h2>Find Us</h2>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-info-text">
+              <h4>Location</h4>
+              <p>Addis Ababa, Ethiopia</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+            <div class="contact-info-text">
+              <h4>Phone</h4>
+              <a href="tel:+251911116130">+251 911 116 130</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+            <div class="contact-info-text">
+              <h4>Email</h4>
+              <a href="mailto:natecafe@email.com">natecafe@email.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true"><i class="fas fa-clock"></i></div>
+            <div class="contact-info-text">
+              <h4>Hours</h4>
+              <p>Monday – Sunday: 7:00 AM – 11:00 PM</p>
+            </div>
+          </div>
+          <div class="social-icons" aria-label="Social media links">
+            <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp (opens in new tab)"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://t.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="Telegram (opens in new tab)"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+            <a href="mailto:natecafe@email.com" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="tel:+251911116130" aria-label="Call us"><i class="fas fa-phone" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Table reservation and contact form">
+            <div class="form-row">
+              <div>
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" placeholder="Your first name" required autocomplete="given-name">
+              </div>
+              <div>
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" placeholder="Your last name" required autocomplete="family-name">
+              </div>
+            </div>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+251 9__ ___ ___" autocomplete="tel">
+            <div class="form-row">
+              <div>
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div>
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" min="07:00" max="22:00">
+              </div>
+            </div>
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+              <option value="">Select guests</option>
+              <option value="1">1 person</option>
+              <option value="2">2 people</option>
+              <option value="3-4">3–4 people</option>
+              <option value="5-8">5–8 people</option>
+              <option value="9-15">9–15 people</option>
+              <option value="16+">16+ people (event)</option>
+            </select>
+            <label for="occasion">Occasion</label>
+            <select id="occasion" name="occasion">
+              <option value="">Select occasion</option>
+              <option value="casual">Casual Dining</option>
+              <option value="birthday">Birthday</option>
+              <option value="anniversary">Anniversary</option>
+              <option value="business">Business Meeting</option>
+              <option value="wedding">Wedding Reception</option>
+              <option value="graduation">Graduation</option>
+              <option value="other">Other</option>
+            </select>
+            <label for="message">Message / Special Requests</label>
+            <textarea id="message" name="message" placeholder="Any dietary requirements, special arrangements, or questions..."></textarea>
+            <button type="submit"><i class="fas fa-calendar-check" aria-hidden="true"></i> Send Reservation Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- HOURS TABLE -->
+  <div class="container hours-section">
+    <section class="section" aria-labelledby="hours-heading">
+      <div class="section-header reveal">
+        <div class="section-label" aria-hidden="true">When We're Open</div>
+        <h2 class="section-title" id="hours-heading">Opening <span>Hours</span></h2>
+        <div class="section-line" role="presentation"></div>
+      </div>
+      <div class="reveal" style="max-width:600px; margin:0 auto;">
+        <table class="hours-table" aria-label="Restaurant opening hours">
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Hours</th><th scope="col">Status</th></tr>
+          </thead>
+          <tbody>
+            <tr class="highlight-row"><td>Monday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr><td>Tuesday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr class="highlight-row"><td>Wednesday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr><td>Thursday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr class="highlight-row"><td>Friday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr><td>Saturday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+            <tr class="highlight-row"><td>Sunday</td><td>7:00 AM – 11:00 PM</td><td style="color:var(--green-light);">Open</td></tr>
+          </tbody>
+        </table>
+        <p style="font-family:'Inter',sans-serif; font-size:0.82rem; color:var(--gray); text-align:center; margin-top:14px;">
+          <i class="fas fa-info-circle" aria-hidden="true" style="color:var(--gold);"></i>
+          We are open every day of the year including public holidays.
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <!-- MAP -->
+  <div class="container map-section">
+    <section class="section" aria-labelledby="map-heading">
+      <div class="section-header reveal">
+        <div class="section-label" aria-hidden="true">Find Us</div>
+        <h2 class="section-title" id="map-heading">Our <span>Location</span></h2>
+        <div class="section-line" role="presentation"></div>
+      </div>
+      <div class="map-container reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126014.78883959408!2d38.6528901!3d9.0054058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85cef5ab402d%3A0x8467b6b037a24d49!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1700000000000!5m2!1sen!2set"
+          title="Nate Café & Restaurant location in Addis Ababa on Google Maps"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Interactive map showing Nate Café location in Addis Ababa, Ethiopia"
+        ></iframe>
+      </div>
+      <p style="font-family:'Inter',sans-serif; font-size:0.85rem; color:var(--gray); text-align:center; margin-top:14px;">
+        <i class="fas fa-map-marker-alt" aria-hidden="true" style="color:var(--gold);"></i>
+        Addis Ababa, Ethiopia &nbsp;|&nbsp;
+        <a href="https://maps.google.com/?q=Addis+Ababa+Ethiopia" target="_blank" rel="noopener noreferrer" style="color:var(--gold);">Open in Google Maps</a>
+      </p>
+    </section>
+  </div>
+
+  <!-- BUSINESS CARD -->
+  <section class="business-card-section" aria-labelledby="card-heading">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:36px;" class="reveal">
+        <div class="section-label" aria-hidden="true">Take Us With You</div>
+        <h2 class="bc-section-title" id="card-heading">Printable Business Card</h2>
+        <div class="section-line" role="presentation" style="margin:10px auto 14px;"></div>
+        <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:var(--gray);">Click "Print Card" to print or save our business card as a PDF</p>
+      </div>
+      <div class="business-card-wrapper" role="group" aria-label="Nate Café business cards – front and back">
+        <!-- FRONT -->
+        <article class="business-card reveal" aria-label="Business card front">
+          <div class="bc-logo-area">
+            <img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="Nate Café logo" width="52" height="52">
+          </div>
+          <div class="bc-info">
+            <div class="bc-name">NATE</div>
+            <div class="bc-tagline">Café &amp; Restaurant</div>
+            <div class="bc-details">
+              <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Addis Ababa, Ethiopia</p>
+              <p><i class="fas fa-phone" aria-hidden="true"></i> +251 911 116 130</p>
+              <p><i class="fas fa-envelope" aria-hidden="true"></i> natecafe@email.com</p>
+              <p><i class="fas fa-clock" aria-hidden="true"></i> Open Daily 7AM – 11PM</p>
+            </div>
+          </div>
+        </article>
+        <!-- BACK -->
+        <article class="business-card card-back reveal" aria-label="Business card back">
+          <div class="bc-motto">"Where every meal is a celebration of flavor"</div>
+          <div class="bc-details" style="text-align:center; margin-bottom:14px;">
+            <p style="color:var(--gold); font-family:'Playfair Display',serif; font-size:0.95rem;">Premium Dining · Artisan Coffee</p>
+            <p style="font-size:0.72rem; margin-top:4px;">Mocktails · Events · Delivery</p>
+          </div>
+          <div class="bc-socials" aria-label="Contact channels">
+            <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://t.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
+            <a href="mailto:natecafe@email.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+      <div class="print-btn-wrap reveal">
+        <button id="printCardBtn" class="btn btn-gold" style="margin-top:28px;" onclick="window.print()">
+          <i class="fas fa-print" aria-hidden="true"></i> Print Business Card
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="container cta-section">
+    <section class="section" style="text-align:center;" aria-labelledby="contact-cta">
+      <div class="reveal">
+        <h2 class="section-title" id="contact-cta">Prefer to <span>WhatsApp?</span></h2>
+        <p class="section-desc" style="margin-bottom:24px;">Message us directly on WhatsApp or Telegram for quick reservations and inquiries.</p>
+        <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+          <a href="https://wa.me/251911116130" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp" aria-hidden="true"></i> WhatsApp Us</a>
+          <a href="https://t.me/251911116130" class="btn btn-outline" target="_blank" rel="noopener noreferrer"><i class="fab fa-telegram" aria-hidden="true"></i> Telegram Us</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="footer" aria-label="Site footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h2>Nate Café &amp; Restaurant</h2><p>Premium dining in the heart of Addis Ababa. Fresh ingredients, bold flavors, unforgettable moments.</p></div>
+    <nav class="footer-col" aria-label="Footer navigation"><h2>Quick Links</h2>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="why-us.html">Why Us</a>
+      <a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="testimonials.html">Reviews</a><a href="contact.html">Contact</a>
+    </nav>
+    <address class="footer-col" style="font-style:normal;"><h2>Contact Us</h2>
+      <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Addis Ababa, Ethiopia</p>
+      <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></p>
+      <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:natecafe@email.com">natecafe@email.com</a></p>
+      <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer" style="color:var(--gold);">WhatsApp Us</a></p>
+    </address>
+    <div class="footer-col"><h2>Opening Hours</h2>
+      <p><i class="fas fa-clock" aria-hidden="true"></i> Mon – Sun: 7:00 AM – 11:00 PM</p>
+      <p style="margin-top:8px; color:var(--green-light);">Open every day including holidays.</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Nate Café &amp; Restaurant. All rights reserved.</p>
+    <p class="footer-credit">Designed &amp; Developed by <a href="https://addispower.pages.dev" target="_blank" rel="noopener noreferrer"><i class="fas fa-bolt" aria-hidden="true"></i> AddisPower</a></p>
+  </div>
+</footer>
+<a href="https://wa.me/251911116130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+<div class="whatsapp-tooltip" aria-hidden="true">Chat with us!</div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Nate Café & Restaurant</title>
+  <meta name="description" content="Explore the gallery of Nate Café & Restaurant – our food, ambiance, and memorable moments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<aside class="topbar" aria-label="Restaurant info">
+  <div><i class="fas fa-clock" aria-hidden="true"></i> Open Daily: <span>7:00 AM – 11:00 PM</span></div>
+  <div><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <span>Addis Ababa, Ethiopia</span></div>
+  <div><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></div>
+</aside>
+<header class="nav-bar">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="index.html" class="logo" aria-label="Nate Café – Home">
+      <img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="Nate Café logo" class="logo-img">
+      <div class="logo-text" aria-hidden="true">NATE<span>CAFÉ &amp; RESTAURANT</span></div>
+    </a>
+    <button class="mobile-menu-btn" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileSideNav"><i class="fas fa-bars" aria-hidden="true"></i></button>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="why-us.html">Why Us</a></li><li><a href="gallery.html" class="active" aria-current="page">Gallery</a></li>
+      <li><a href="events.html">Events</a></li><li><a href="testimonials.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li><li><a href="contact.html" class="nav-cta-btn">Reserve a Table</a></li>
+    </ul>
+  </nav>
+</header>
+<nav class="mobile-side-nav" id="mobileSideNav" aria-label="Mobile navigation" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="mobile-side-header">
+    <div class="mobile-logo"><img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="" class="mobile-logo-img"><span>Nate Café</span></div>
+    <button class="close-side-nav" id="closeSideNav" aria-label="Close menu"><i class="fas fa-times" aria-hidden="true"></i></button>
+  </div>
+  <ul class="mobile-nav-links" role="list">
+    <li><a href="index.html"><span aria-hidden="true">🏠</span> Home</a></li>
+    <li><a href="about.html"><span aria-hidden="true">📖</span> About</a></li>
+    <li><a href="why-us.html"><span aria-hidden="true">⭐</span> Why Us</a></li>
+    <li><a href="gallery.html" class="active"><span aria-hidden="true">🖼️</span> Gallery</a></li>
+    <li><a href="events.html"><span aria-hidden="true">🎉</span> Events</a></li>
+    <li><a href="testimonials.html"><span aria-hidden="true">💬</span> Reviews</a></li>
+    <li><a href="contact.html"><span aria-hidden="true">📞</span> Contact</a></li>
+    <li><a href="contact.html" class="mobile-cta-btn"><span aria-hidden="true">🍽️</span> Reserve a Table</a></li>
+  </ul>
+  <div class="mobile-side-footer">
+    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></p>
+    <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+    <p><i class="fab fa-telegram" aria-hidden="true"></i> <a href="https://t.me/251911116130" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+  </div>
+</nav>
+<div class="side-nav-overlay" id="sideNavOverlay" aria-hidden="true"></div>
+
+<main id="main-content">
+  <div class="page-header">
+    <div class="page-header-content">
+      <h1>Gallery</h1>
+      <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Gallery</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <section class="section" aria-labelledby="gallery-heading">
+      <div class="section-header reveal">
+        <div class="section-label" aria-hidden="true">Visual Tour</div>
+        <h2 class="section-title" id="gallery-heading">Our <span>Moments</span></h2>
+        <div class="section-line" role="presentation"></div>
+        <p class="section-desc">A glimpse into the flavors, ambiance, and memories we create every day</p>
+      </div>
+
+      <ul class="gallery-grid" role="list" aria-label="Photo gallery">
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Restaurant interior">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb51f3a?w=600&q=80" alt="Elegant restaurant interior with warm lighting and comfortable seating" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Our Interior</h4><p>Warm &amp; Welcoming</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Ethiopian coffee ceremony">
+          <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80" alt="Traditional Ethiopian coffee ceremony with freshly brewed coffee" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Coffee Ceremony</h4><p>Ethiopian Tradition</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Gourmet dish">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80" alt="Beautifully plated gourmet main course dish" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Signature Dish</h4><p>Culinary Artistry</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Artisan coffee drinks">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Artisan latte with beautiful latte art in a warm café setting" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Artisan Coffee</h4><p>Crafted with Care</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Fresh pastries">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Fresh-baked croissants and pastries displayed beautifully" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Fresh Pastries</h4><p>Baked Daily</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Mocktail drinks">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Colorful signature mocktail drinks with garnishes" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Mocktails</h4><p>Handcrafted Drinks</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Dining area">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Beautifully set dining tables with elegant tableware" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Dining Area</h4><p>Elegant Setting</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Ethiopian cuisine spread">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80" alt="Spread of colourful Ethiopian traditional dishes on injera" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Ethiopian Cuisine</h4><p>Local Favorites</p></div>
+        </li>
+        <li class="gallery-item reveal" tabindex="0" role="button" aria-label="View: Outdoor seating area">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Inviting outdoor terrace seating area in the evening" loading="lazy" width="600" height="450">
+          <div class="gallery-overlay" aria-hidden="true"><h4>Outdoor Terrace</h4><p>Evening Ambiance</p></div>
+        </li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer"><i class="fas fa-times" aria-hidden="true"></i></button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<footer class="footer" aria-label="Site footer">
+  <div class="footer-grid">
+    <div class="footer-col"><h2>Nate Café &amp; Restaurant</h2><p>Premium dining in the heart of Addis Ababa.</p></div>
+    <nav class="footer-col" aria-label="Footer navigation"><h2>Quick Links</h2>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="why-us.html">Why Us</a>
+      <a href="gallery.html">Gallery</a><a href="events.html">Events</a><a href="testimonials.html">Reviews</a><a href="contact.html">Contact</a>
+    </nav>
+    <address class="footer-col" style="font-style:normal;"><h2>Contact Us</h2>
+      <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Addis Ababa, Ethiopia</p>
+      <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+251911116130">+251 911 116 130</a></p>
+      <p><i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer" style="color:var(--gold);">WhatsApp Us</a></p>
+    </address>
+    <div class="footer-col"><h2>Opening Hours</h2>
+      <p><i class="fas fa-clock" aria-hidden="true"></i> Mon – Sun: 7:00 AM – 11:00 PM</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Nate Café &amp; Restaurant. All rights reserved.</p>
+    <p class="footer-credit">Designed &amp; Developed by <a href="https://addispower.pages.dev" target="_blank" rel="noopener noreferrer"><i class="fas fa-bolt" aria-hidden="true"></i> AddisPower</a></p>
+  </div>
+</footer>
+<a href="https://wa.me/251911116130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+<div class="whatsapp-tooltip" aria-hidden="true">Chat with us!</div>
+<script src="js/main.js"></script>
+<script>
+// Keyboard lightbox trigger for gallery items
+document.querySelectorAll('.gallery-item').forEach(item => {
+  item.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.querySelector('img').click(); }
+  });
+});
+</script>
+</body>
+</html>

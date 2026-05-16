@@ -314,6 +314,11 @@ body.menu-open { overflow: hidden; }
 .section-title span { color: var(--gold); }
 .section-line { width: 48px; height: 3px; background: var(--green); margin: 0 auto; border-radius: 2px; }
 .section-desc { color: var(--gray); max-width: 550px; margin: 14px auto 0; font-size: 0.93rem; line-height: 1.7; font-family: 'Inter', sans-serif; }
+.subtitle {
+    color: var(--green-light); font-weight: 600;
+    font-size: 0.82rem; text-transform: uppercase; letter-spacing: 2px;
+    margin-bottom: 16px; font-family: 'Inter', sans-serif;
+}
 
 /* ============ HIGHLIGHT CARDS ============ */
 .highlights-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 22px; }
@@ -498,41 +503,6 @@ body.menu-open { overflow: hidden; }
 .map-container { border-radius: var(--radius-lg); overflow: hidden; border: 2px solid rgba(45,138,78,0.3); margin-top: 28px; box-shadow: var(--shadow-lg); }
 .map-container iframe { width: 100%; height: 340px; border: none; display: block; }
 
-/* ============ BUSINESS CARD ============ */
-.business-card-section { background: var(--green-surface); padding: 50px 0; border-top: 1px solid rgba(45,138,78,0.2); }
-.business-card-wrapper { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; align-items: flex-start; }
-.business-card {
-    width: 340px; height: 200px; background: linear-gradient(135deg, var(--green-card) 0%, #0D2618 100%);
-    border-radius: 16px; border: 1px solid rgba(201,169,110,0.3);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.6); position: relative; overflow: hidden;
-    display: flex; align-items: center; padding: 24px;
-    font-family: 'Playfair Display', serif;
-}
-.business-card::before {
-    content: ''; position: absolute; top: -30px; right: -30px;
-    width: 120px; height: 120px; background: var(--green); border-radius: 50%; opacity: 0.12;
-}
-.business-card::after {
-    content: ''; position: absolute; bottom: -20px; left: -20px;
-    width: 80px; height: 80px; background: var(--gold); border-radius: 50%; opacity: 0.07;
-}
-.bc-logo-area { margin-right: 18px; flex-shrink: 0; position: relative; z-index: 1; }
-.bc-logo-area img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; border: 2px solid var(--gold); }
-.bc-info { position: relative; z-index: 1; }
-.bc-name { font-size: 1.2rem; font-weight: 700; color: var(--gold); letter-spacing: 1px; margin-bottom: 2px; }
-.bc-tagline { font-family: 'Inter', sans-serif; font-size: 0.68rem; color: var(--green-light); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; }
-.bc-details p { font-family: 'Inter', sans-serif; font-size: 0.7rem; color: var(--gray-light); margin: 3px 0; }
-.bc-details i { color: var(--gold); width: 14px; margin-right: 5px; }
-.card-back {
-    background: linear-gradient(135deg, #0D2618 0%, var(--green-card) 100%);
-    flex-direction: column; justify-content: center; text-align: center;
-}
-.card-back .bc-motto { font-size: 1rem; font-style: italic; color: var(--gold-light); line-height: 1.5; margin-bottom: 14px; }
-.card-back .bc-socials { display: flex; gap: 14px; justify-content: center; }
-.card-back .bc-socials a { color: var(--gold); font-size: 1.1rem; transition: var(--transition); }
-.card-back .bc-socials a:hover { color: #fff; }
-.print-btn-wrap { text-align: center; margin-top: 22px; }
-
 /* ============ WHATSAPP FLOAT ============ */
 .whatsapp-float {
     position: fixed; bottom: 28px; right: 28px; width: 58px; height: 58px;
@@ -568,17 +538,10 @@ body.menu-open { overflow: hidden; }
 /* ============ PRINT STYLES ============ */
 @media print {
     .nav-bar, .topbar, .footer, .whatsapp-float, .whatsapp-tooltip,
-    .mobile-side-nav, .side-nav-overlay, .print-btn-wrap, .skip-link { display: none !important; }
-    .business-card-section { background: white !important; padding: 0 !important; }
-    .business-card {
-        border: 2px solid #2D8A4E !important; box-shadow: none !important;
-        break-inside: avoid; background: #f8fff8 !important;
-    }
-    .bc-name, .bc-motto { color: #1B6B34 !important; -webkit-text-fill-color: #1B6B34 !important; }
-    .bc-details p, .bc-tagline { color: #333 !important; }
-    .bc-details i { color: #2D8A4E !important; }
+    .mobile-side-nav, .side-nav-overlay, .skip-link,
+    .contact-section, .hours-section, .map-section, .cta-section, .page-header { display: none !important; }
     body { background: white !important; color: #000 !important; }
-    .business-card-wrapper { gap: 20px; }
+    .reveal { opacity: 1 !important; transform: none !important; }
 }
 
 /* ============ RESPONSIVE ============ */
@@ -599,7 +562,6 @@ body.menu-open { overflow: hidden; }
     .nav-links { display: none !important; }
     .features-grid { grid-template-columns: repeat(2, 1fr); }
     .section { padding: 50px 0; }
-    .business-card { width: 290px; height: 172px; }
 }
 @media (min-width: 769px) {
     .nav-links { display: flex !important; }
@@ -612,5 +574,4 @@ body.menu-open { overflow: hidden; }
     .about-stats { grid-template-columns: 1fr; }
     .section-title { font-size: 1.6rem; }
     .page-header h1 { font-size: 1.9rem; }
-    .business-card { width: 100%; max-width: 320px; }
 }

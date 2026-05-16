@@ -113,7 +113,6 @@
   </div>
 </main>
 
-<!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
   <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer"><i class="fas fa-times" aria-hidden="true"></i></button>
   <img id="lightboxImg" src="" alt="">
@@ -136,20 +135,12 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Nate Café &amp; Restaurant. All rights reserved.</p>
+    <p>&copy; 2025 Nate Café &amp; Restaurant. All rights reserved.</p>
     <p class="footer-credit">Designed &amp; Developed by <a href="https://addispower.pages.dev" target="_blank" rel="noopener noreferrer"><i class="fas fa-bolt" aria-hidden="true"></i> AddisPower</a></p>
   </div>
 </footer>
 <a href="https://wa.me/251911116130" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
 <div class="whatsapp-tooltip" aria-hidden="true">Chat with us!</div>
 <script src="js/main.js"></script>
-<script>
-// Keyboard lightbox trigger for gallery items
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); item.querySelector('img').click(); }
-  });
-});
-</script>
 </body>
 </html>

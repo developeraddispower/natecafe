@@ -8,29 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    @media print {
-      .nav-bar, .topbar, .footer, .whatsapp-float, .whatsapp-tooltip,
-      .mobile-side-nav, .side-nav-overlay, .skip-link,
-      .contact-section, .hours-section, .map-section, .cta-section, .page-header { display: none !important; }
-      body { background: white !important; color: #000 !important; }
-      .business-card-section { padding: 30px !important; }
-      .business-card { box-shadow: none !important; break-inside: avoid; }
-      .business-card, .card-back { background: #f5fff8 !important; border: 2px solid #2D8A4E !important; }
-      .bc-name { color: #1B6B34 !important; -webkit-text-fill-color: #1B6B34 !important; }
-      .bc-tagline, .bc-motto { color: #2D8A4E !important; -webkit-text-fill-color: #2D8A4E !important; }
-      .bc-details p { color: #333 !important; }
-      .print-btn-wrap { display: none !important; }
-      .bc-section-title { color: #1B6B34 !important; -webkit-text-fill-color: #1B6B34 !important; }
-    }
-    .bc-section-title {
-      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;
-      margin-bottom: 8px;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
-      background-size: 200% auto; -webkit-background-clip: text; background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -86,7 +63,6 @@
     </div>
   </div>
 
-  <!-- CONTACT FORM + INFO -->
   <div class="container contact-section">
     <section class="section" aria-labelledby="contact-heading">
       <div class="section-header reveal">
@@ -189,7 +165,6 @@
     </section>
   </div>
 
-  <!-- HOURS TABLE -->
   <div class="container hours-section">
     <section class="section" aria-labelledby="hours-heading">
       <div class="section-header reveal">
@@ -220,7 +195,6 @@
     </section>
   </div>
 
-  <!-- MAP -->
   <div class="container map-section">
     <section class="section" aria-labelledby="map-heading">
       <div class="section-header reveal">
@@ -246,55 +220,6 @@
     </section>
   </div>
 
-  <!-- BUSINESS CARD -->
-  <section class="business-card-section" aria-labelledby="card-heading">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:36px;" class="reveal">
-        <div class="section-label" aria-hidden="true">Take Us With You</div>
-        <h2 class="bc-section-title" id="card-heading">Printable Business Card</h2>
-        <div class="section-line" role="presentation" style="margin:10px auto 14px;"></div>
-        <p style="font-family:'Inter',sans-serif; font-size:0.9rem; color:var(--gray);">Click "Print Card" to print or save our business card as a PDF</p>
-      </div>
-      <div class="business-card-wrapper" role="group" aria-label="Nate Café business cards – front and back">
-        <!-- FRONT -->
-        <article class="business-card reveal" aria-label="Business card front">
-          <div class="bc-logo-area">
-            <img src="https://raw.githubusercontent.com/Addis477/natanpro/c1625dba577af6493216bf3a9a806fe73b8cf582/logo.jpg" alt="Nate Café logo" width="52" height="52">
-          </div>
-          <div class="bc-info">
-            <div class="bc-name">NATE</div>
-            <div class="bc-tagline">Café &amp; Restaurant</div>
-            <div class="bc-details">
-              <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Addis Ababa, Ethiopia</p>
-              <p><i class="fas fa-phone" aria-hidden="true"></i> +251 911 116 130</p>
-              <p><i class="fas fa-envelope" aria-hidden="true"></i> natecafe@email.com</p>
-              <p><i class="fas fa-clock" aria-hidden="true"></i> Open Daily 7AM – 11PM</p>
-            </div>
-          </div>
-        </article>
-        <!-- BACK -->
-        <article class="business-card card-back reveal" aria-label="Business card back">
-          <div class="bc-motto">"Where every meal is a celebration of flavor"</div>
-          <div class="bc-details" style="text-align:center; margin-bottom:14px;">
-            <p style="color:var(--gold); font-family:'Playfair Display',serif; font-size:0.95rem;">Premium Dining · Artisan Coffee</p>
-            <p style="font-size:0.72rem; margin-top:4px;">Mocktails · Events · Delivery</p>
-          </div>
-          <div class="bc-socials" aria-label="Contact channels">
-            <a href="https://wa.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-            <a href="https://t.me/251911116130" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram" aria-hidden="true"></i></a>
-            <a href="mailto:natecafe@email.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-          </div>
-        </article>
-      </div>
-      <div class="print-btn-wrap reveal">
-        <button id="printCardBtn" class="btn btn-gold" style="margin-top:28px;" onclick="window.print()">
-          <i class="fas fa-print" aria-hidden="true"></i> Print Business Card
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
   <div class="container cta-section">
     <section class="section" style="text-align:center;" aria-labelledby="contact-cta">
       <div class="reveal">
@@ -328,7 +253,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2026 Nate Café &amp; Restaurant. All rights reserved.</p>
+    <p>&copy; 2025 Nate Café &amp; Restaurant. All rights reserved.</p>
     <p class="footer-credit">Designed &amp; Developed by <a href="https://addispower.pages.dev" target="_blank" rel="noopener noreferrer"><i class="fas fa-bolt" aria-hidden="true"></i> AddisPower</a></p>
   </div>
 </footer>
